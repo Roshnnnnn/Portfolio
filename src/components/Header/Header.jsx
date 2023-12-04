@@ -2,7 +2,7 @@ import Image from "../../assets/dark.jpeg";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,15 +18,15 @@ const Header = () => {
           I'm a Developer
         </p>
         <div className="flex mt-4 sm:mt-6 gap-3 sm:gap-5">
-          <Link to="/twitter" className="text-xl sm:text-2xl">
+          <a to="/twitter" className="text-xl sm:text-2xl">
             <FaSquareXTwitter />
-          </Link>
-          <Link to="/instagram" className="text-xl sm:text-2xl">
+          </a>
+          <a to="/instagram" className="text-xl sm:text-2xl">
             <FaInstagram />
-          </Link>
-          <Link to="/linkedin" className="text-xl sm:text-2xl">
+          </a>
+          <a to="/linkedin" className="text-xl sm:text-2xl">
             <FaLinkedin />
-          </Link>
+          </a>
         </div>
       </div>
     </section>
