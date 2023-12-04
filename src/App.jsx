@@ -1,12 +1,13 @@
 import "./App.css";
-import ProductCarousel from "./components/Carousel/ProductCarousel";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <>
-      {/* <h1>Hello</h1> */}
-      <ProductCarousel />
-    </>
+    <div>
+      <h1>
+        <Header />
+      </h1>
+    </div>
   );
 }
 
