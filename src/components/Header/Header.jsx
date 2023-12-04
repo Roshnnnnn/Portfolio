@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "../../assets/dark.jpeg";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
