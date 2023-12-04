@@ -9,24 +9,25 @@ const Header = () => {
   return (
     <section className="relative">
       <div className="w-screen h-screen overflow-hidden">
-        <img src={Image} alt="" className="overflow-cover w-full h-screen" />
+        <img src={Image} alt="" className="overflow-cover w-screen h-screen" />
       </div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-white m-10 w-max text-center">
-        <h1 className="text-7xl">Roshan Kumar Yadav</h1>
-        <p className="text-lg mt-6 text-left">Additional text if needed</p>
-        <div className="flex mt-6 gap-5">
-          <Link
-            to={{ pathname: "/https://twitter.com/kroshan730" }}
-            className="items-center"
-          >
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white m-6 sm:m-10 w-full sm:w-max text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-left">
+          Roshan Kumar Yadav
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-2 sm:mt-4 text-left">
+          I'm a Developer
+        </p>
+        <div className="flex mt-4 sm:mt-6 gap-3 sm:gap-5">
+          <Link to="/twitter" className="text-xl sm:text-2xl">
             <FaSquareXTwitter />
           </Link>
-          <a to="/instagram" className="items-center">
+          <Link to="/instagram" className="text-xl sm:text-2xl">
             <FaInstagram />
-          </a>
-          <a to="/linkedin" className="items-center">
+          </Link>
+          <Link to="/linkedin" className="text-xl sm:text-2xl">
             <FaLinkedin />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
