@@ -2,12 +2,11 @@ import Image from "../../assets/dark.jpeg";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-// import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <section className="relative">
-      <div className="w-screen h-screen overflow-hidden">
+      <div className="w-full h-screen overflow-hidden">
         <img src={Image} alt="" className="overflow-cover w-screen h-screen" />
       </div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white m-6 sm:m-10 w-full sm:w-max text-center">
