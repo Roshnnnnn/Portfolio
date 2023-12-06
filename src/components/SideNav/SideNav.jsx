@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <div className="absolute h-screen">
       <div className="w-20 fixed top-0 bottom-0 z-9 transition-all duration-100 ease-in-out">
-        <div className="p-4 cursor-pointer " onClick={handleClick}>
+        <div className="p-4 cursor-pointer" onClick={handleClick}>
           {open ? (
             <RiDeleteBin5Fill className="ml-3 text-xl" />
           ) : (

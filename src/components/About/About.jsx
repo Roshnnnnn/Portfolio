@@ -35,8 +35,17 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="py-16">
-      <div className="text-3xl">About</div>
+    <div className="text-center justify-center mt-5">
+      <h2 className="text-2xl font-bold uppercase relative text-gray-700 ">
+        About
+      </h2>
+      <p className="items-center w-[65rem] ml-[10rem]">
+        Hello, my name is Roshan Kumar Yadav. I completed my BCA in 2021 from
+        Vikrant Group of Institutions, which is affiliated with Jiwaji
+        University. After that, I joined a BPO job at Jio. During that time, I
+        realized that I wasn't finding fulfillment in my work and decided to
+        consider a change in my career path.
+      </p>
     </div>
   );
 };
