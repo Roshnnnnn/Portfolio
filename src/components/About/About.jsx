@@ -1,115 +1,13 @@
-// import { FaArrowRight } from "react-icons/fa";
-
-// const About = () => {
-//   return (
-//     <div className="ml-[8rem]">
-//       <div className="text-center pb-30">
-//         <h2 className="text-2xl font-bold uppercase mb-5 pb-5 relative text-gray-700">
-//           About
-//         </h2>
-//         <p className="mt-6 text-gray-600 mr-[4rem] ">
-//           Hello, my name is Roshan Kumar Yadav. I completed my BCA in 2021 from
-//           Vikrant Group of Institutions, which is affiliated with Jiwaji
-//           University. After that, I joined a BPO job at Jio. During that time, I
-//           realized that I wasn't finding fulfillment in my work and decided to
-//           consider a change in my career path.
-//         </p>
-//       </div>
-//       <div className="flex items-center gap-x-6 mt-5">
-//         <div className="flex-shrink-0 w-1/3">
-//           <img
-//             className="h-[32rem]"
-//             src="https://bootstrapmade.com/demo/templates/MyResume/assets/img/profile-img.jpg"
-//             alt="image"
-//           />
-//         </div>
-//         <div className="mb-[4rem]">
-//           <h3 className="font-bold text-center text-2xl text-gray-600 mb-2 mt-10">
-//             Frontend Engineer
-//           </h3>
-//           <p className="font-bold text-sm text-gray-700 text-center mx-8">
-//             Hello, my name is Roshan Kumar Yadav. I completed my BCA in 2021
-//             from Vikrant Group of Institutions, which is affiliated with Jiwaji
-//             University. After that, I joined a BPO job at Jio. During that time,
-//             I realized that I wasn't finding fulfillment in my work and decided
-//             to consider a change in my career path.
-//           </p>
-//           <div className="flex mt-[2rem]">
-//             <div className="flex-shrink-0 w-1/2">
-//               <ul className="list-none m-1">
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">Graduation:</strong>
-//                   <span>BCA</span>
-//                 </li>
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">intermediate:</strong>
-//                   <span>12th</span>
-//                 </li>
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">High School:</strong>
-//                   <span>10th</span>
-//                 </li>
-//               </ul>
-//             </div>
-//             <div className="flex-shrink-0 w-1/2">
-//               <ul className="list-none p-0">
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">Email:</strong>
-//                   <span>roshankumar.02yadav@gmail.com</span>
-//                 </li>
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">Mobile:</strong>
-//                   <span>9893018968</span>
-//                 </li>
-//                 <li className="flex items-center mb-2">
-//                   <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-//                   <strong className="mr-5">City:</strong>
-//                   <span>Gwalior</span>
-//                 </li>
-//               </ul>
-//             </div>
-//           </div>
-//           <div className="mt-2">
-//             <p className="font-bold text-center text-sm text-gray-700 mx-8">
-//               It was at this point that I heard about web development, a field
-//               known for its creative aspects, which appealed to me. I decided to
-//               explore this avenue further and joined the Neog Camp. Here, I
-//               learned a variety of skills including HTML, CSS, vanilla
-//               JavaScript, version control, and much more. I applied these skills
-//               to my projects, some of which I have mentioned here.
-//             </p>
-//           </div>
-//           <div className="mt-2">
-//             <p className="font-bold text-center text-sm text-gray-700 mx-8">
-//               This journey allowed me to tap into my creativity and provided me
-//               with the opportunity to learn and grow. I'm proud of the projects
-//               I've worked on, and I'm excited to continue exploring new and
-//               exciting projects in the future.
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default About;
-
 import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="lg:ml-[8rem]">
+    <div className="md:ml-4 lg:ml-[6rem] lg:mr-2">
       <div className="text-center pb-8 lg:pb-30">
         <h2 className="text-xl lg:text-2xl font-bold uppercase mb-2 lg:mb-5 pb-2 lg:pb-5 relative text-gray-700">
           About
         </h2>
-        <p className="mt-4 lg:mt-6 text-gray-600 lg:mr-[4rem] lg:ml-[4rem]">
+        <p className="lg:mt-6 text-gray-600">
           Hello, my name is Roshan Kumar Yadav. I completed my BCA in 2021 from
           Vikrant Group of Institutions, which is affiliated with Jiwaji
           University. After that, I joined a BPO job at Jio. During that time, I
@@ -118,7 +16,7 @@ const About = () => {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center gap-y-6 lg:gap-y-0 lg:gap-x-6 mt-5">
-        <div className="flex-shrink-0 w-full md:w-1/3 hidden md:block">
+        <div className="flex-shrink-0 w-full md:w-1/3 hidden lg:block">
           <img
             className="h-[32rem] md:h-auto md:w-full object-cover"
             src="https://bootstrapmade.com/demo/templates/MyResume/assets/img/profile-img.jpg"
@@ -136,43 +34,42 @@ const About = () => {
             I realized that I wasn't finding fulfillment in my work and decided
             to consider a change in my career path.
           </p>
-          <div className="flex flex-col lg:flex-row sm:ml-8 lg:mt-[2rem]">
-            <div className="flex-shrink-0 w-full lg:w-1/2">
-              <ul className="list-none m-1 text-center lg:text-left">
-                {" "}
+          <div className="flex flex-col lg:flex-row mx-[2rem] my-[2rem] md:justify-center">
+            <div className="flex w-1/3 md:text-center">
+              <ul className="list-none w-full m-1 text-center lg:text-left">
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">Graduation:</strong>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>Graduation :</strong>
                   <span>BCA</span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">intermediate:</strong>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>Intermediate :</strong>
                   <span>12th</span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">High School:</strong>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>High School :</strong>
                   <span>10th</span>
                 </li>
               </ul>
             </div>
-            <div className="flex-shrink-0 w-full lg:w-1/2">
-              <ul className="list-none p-0">
-                {" "}
+            <div className="flex w-full lg:w-2/3">
+              <ul className="list-none m-1 text-center lg:text-left">
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">Email:</strong>
-                  <span>roshankumar.02yadav@gmail.com</span>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>Email :</strong>
+                  <span className="">roshankumar02.</span>
+                  <span className="">yadav@gmail.com</span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">Mobile:</strong>
-                  <span>9893018968</span>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>Mobile :</strong>
+                  <span>+91 9893018968</span>
                 </li>
                 <li className="flex items-center mb-2">
-                  <FaArrowRight className="text-blue-600 text-sm mr-1 leading-3" />
-                  <strong className="mr-5">City:</strong>
+                  <FaArrowRight className="text-blue-600 text-sm leading-3" />
+                  <strong>City :</strong>
                   <span>Gwalior</span>
                 </li>
               </ul>
