@@ -10,6 +10,28 @@ import { GiHamburger } from "react-icons/gi";
 import { RiDeleteBin5Fill } from "react-icons/ri";
 
 const Sidebar = () => {
+  let Links = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Skills",
+      link: "/skills",
+    },
+    {
+      name: "Work",
+      link: "/work",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -27,7 +49,9 @@ const Sidebar = () => {
           )}
         </div>
         <ul
-          className={`top-20 mt-20 cursor-pointer ${open ? "block" : "hidden"}`}
+          className={`top-20 mt-20 cursor-pointer ${
+            open ? "flex-col" : "md:flex-row"
+          } ${open ? "" : "hidden"}`}
         >
           <li className="p-4 hover:bg-gray-600">
             <FiHome className="ml-3 text-xl" />
@@ -49,6 +73,15 @@ const Sidebar = () => {
             <MdOutlineMailOutline className="ml-3 text-xl" />
             <span>Contact</span>
           </li>
+        </ul>
+      </div>
+      <div>
+        <ul className="md:pb-0 pb-12 absolute bg-white">
+          {Links.map((item, index) => (
+            <li className="md:my-0 my-7" key={index}>
+              {item.name}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
