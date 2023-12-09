@@ -20,7 +20,7 @@ const Sidebar = () => {
     <div className="absolute h-screen">
       <div
         className={
-          "w-20 fixed top-0 m-[1.5rem]  z-9 transition-all duration-100 ease-in-out"
+          "w-20 fixed top-0 m-[1.5rem] z-9 transition-all duration-100 ease-in-out"
         }
       >
         <div className="p-4 cursor-pointer" onClick={handleClick}>

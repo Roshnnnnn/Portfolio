@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="md:ml-4 lg:ml-[6rem] lg:mr-2">
+    <div className="md:ml-4 lg:ml-[6rem] lg:mr-2 lg:mt-8">
       <div className="text-center pb-8 lg:pb-30">
         <h2 className="text-xl lg:text-2xl font-bold uppercase mb-2 lg:mb-5 pb-2 lg:pb-5 relative text-gray-700">
           About
