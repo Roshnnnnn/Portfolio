@@ -54,15 +54,15 @@ const SkillPage = () => {
           data="75%"
         />
         <SkillCard
+          icon={<TbBrandNextjs />}
+          title="Nextjs"
+          colorClass="text-black-800"
+          data="50%"
+        />
+        <SkillCard
           icon={<TbBrandRedux />}
           title="Redux Toolkit"
           colorClass="text-blue-800"
-          data="75%"
-        />
-        <SkillCard
-          icon={<TbBrandNextjs />}
-          title="Redux Toolkit"
-          colorClass="text-black-800"
           data="75%"
         />
       </div>
