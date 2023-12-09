@@ -6,7 +6,7 @@ const Layout = () => {
   return (
     <>
       <SideNav />
-      <Header />
+      {/* <Header /> */}
       <Outlet />
     </>
   );
