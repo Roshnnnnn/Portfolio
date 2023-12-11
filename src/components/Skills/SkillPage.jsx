@@ -21,7 +21,7 @@ const SkillPage = () => {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-300 p-4 md:p-8 lg:p-16">
+    <div className="flex flex-col items-center justify-center min-h-screen  p-4 md:p-8 lg:p-16">
       <animated.div
         style={skillsAnimation}
         className="mb-8 text-4xl md:text-5xl lg:text-6xl font-bold text-black"
