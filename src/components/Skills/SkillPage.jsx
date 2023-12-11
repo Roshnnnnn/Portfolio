@@ -21,14 +21,14 @@ const SkillPage = () => {
   });
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-300">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-slate-300 p-4 md:p-8 lg:p-16">
       <animated.div
         style={skillsAnimation}
-        className="mb-8 text-4xl font-bold text-black"
+        className="mb-8 text-4xl md:text-5xl lg:text-6xl font-bold text-black"
       >
         Skills
       </animated.div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 max-w-screen-xl w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 max-w-screen-xl w-full">
         <SkillCard
           icon={<FaHtml5 />}
           title="HTML5"
@@ -96,7 +96,9 @@ const SkillCard = ({ icon, title, colorClass, data }) => {
       className={`p-4 rounded-md shadow-md text-center text-black cursor-pointer ${colorClass} `}
     >
       {icon}
-      <p className="mt-2 text-lg font-semibold">{title}</p>
+      <p className="mt-2 text-lg md:text-xl lg:text-2xl font-semibold">
+        {title}
+      </p>
       {loading && (
         <div className="bg-blue-500 h-2 mt-2 rounded-md overflow-hidden">
           <animated.div
@@ -105,7 +107,9 @@ const SkillCard = ({ icon, title, colorClass, data }) => {
           ></animated.div>
         </div>
       )}
-      <p className="mt-2 text-lg font-semibold">{data}</p>
+      <p className="mt-2 text-lg md:text-xl lg:text-2xl font-semibold">
+        {data}
+      </p>
     </div>
   );
 };
