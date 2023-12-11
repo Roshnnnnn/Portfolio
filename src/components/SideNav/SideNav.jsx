@@ -8,6 +8,7 @@ import { FiHome } from "react-icons/fi";
 import { FaRegFaceGrin } from "react-icons/fa6";
 import { GiHamburger } from "react-icons/gi";
 import { RiDeleteBin5Fill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -17,10 +18,10 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="absolute h-screen">
+    <div className="absolute z-50 h-screen">
       <div
         className={
-          "w-20 fixed top-0 m-[1.5rem] z-9 transition-all duration-100 ease-in-out"
+          "w-20 fixed top-0 m-[1.5rem] z-50 transition-all duration-100 ease-in-out"
         }
       >
         <div className="p-4 cursor-pointer" onClick={handleClick}>
@@ -35,26 +36,26 @@ const Sidebar = () => {
             open ? "flex-col" : "md:flex-row"
           } ${open ? "" : "hidden"}`}
         >
-          <li className="p-4 hover:bg-gray-600">
+          <Link to={"/"} className="p-4 hover:bg-gray-600">
             <FiHome className="ml-3 text-xl" />
             <span>Home</span>
-          </li>
-          <li className="p-4 hover:bg-gray-600">
+          </Link>
+          <Link to={"/about"} className="p-4 hover:bg-gray-600">
             <FaRegFaceGrin className="ml-3 text-xl" />
             <span>About</span>
-          </li>
-          <li className="p-4 hover:bg-gray-600">
+          </Link>
+          <Link to={"/skill"} className="p-4 hover:bg-gray-600">
             <MdOutlineContactPage className="ml-3 text-xl" />
             <span>Skills</span>
-          </li>
-          <li className="p-4 hover:bg-gray-600">
+          </Link>
+          <Link to={"/work"} className="p-4 hover:bg-gray-600">
             <MdOutlineHomeRepairService className="ml-3 text-xl" />
             <span>Work</span>
-          </li>
-          <li className="p-4 hover:bg-gray-600">
+          </Link>
+          <Link to={"/contact"} className="p-4 hover:bg-gray-600">
             <MdOutlineMailOutline className="ml-3 text-xl" />
             <span>Contact</span>
-          </li>
+          </Link>
         </ul>
       </div>
     </div>
